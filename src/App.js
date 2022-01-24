@@ -1,22 +1,21 @@
-import logo from './logo.svg';
+import logo from '../src/logo.png';
 import './App.css';
+//import { editableInputTypes } from '@testing-library/user-event/dist/utils';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app">
+      <header className='head-container'>
+      <img src={logo} className="logoimg-container" alt="logomusical" width="50px" height="50px"/>
+      <navBar className="navBar-container">
+        <ul> 
+          <li><a href="https://www.google.com">Inicio</a></li>
+          <li><a href="https://www.google.com">Ofertas</a></li>
+          <li><a href="https://www.google.com">Instrumentos</a></li>
+          <li><a href="https://www.google.com">Amplificadores</a></li>
+          <li><a href="https://www.google.com">Pedales/Pedaleras</a></li>
+        </ul>
+      </navBar>
       </header>
     </div>
   );
