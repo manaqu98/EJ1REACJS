@@ -11,12 +11,12 @@
   padding-right: 20px;
 }
 
-.navBar-container ul li {
+.navBar-container ul li{
   display: inline-block;
   line-height: 72px;
 }
 
-.navBar-container a {
+.navBar-container a{
   display: block;
   padding: 0 10px;
   text-decoration: none;
