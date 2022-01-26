@@ -1,12 +1,12 @@
 import "../components/NavBar.css";
 import logo from '../logo.png';
 
-function navBar() {
+const NavBar = () => {
     return (
-    <div className="navBar-div">
+    <main className="navBar-div">
         <header className='head-container'>
         <img src={logo} className="logoimg-container" alt="logomusical" width="50px" height="50px"/>
-        <navBar className="navBar-container">
+        <div className="navBar-container">
             <ul> 
                 <li><a href="https://www.google.com">Inicio</a></li>
                 <li><a href="https://www.google.com">Ofertas</a></li>
@@ -14,10 +14,10 @@ function navBar() {
                 <li><a href="https://www.google.com">Amplificadores</a></li>
                 <li><a href="https://www.google.com">Pedales/Pedaleras</a></li>
             </ul>
-        </navBar>
+        </div>
         </header>
-    </div>
+    </main>
     );
 }
 
-export default navBar;
+export default NavBar;
