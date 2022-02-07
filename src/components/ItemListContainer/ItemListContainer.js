@@ -9,22 +9,15 @@ const ItemListContainer = ({ greeting }) => {
 	console.log(products);
 
     useEffect(() => {
-		fetch('https://www.mockachino.com/de419ede-2031-47/products')
-		.then((response) => response.json())
-		.then((json) => setProducts(json))
-        .catch((error)=>{console.log(error)})
-	}, []);
+        fetch('https://www.mockachino.com/de419ede-2031-47/products')
+            .then((response) => response.json())
+            .then((json) => setProducts(json.products))
+            .catch((error) => { console.log(error) })
+    }, []);
 
-    return(
+    return (
         <div className="itemListContainer-container">
-            {greeting}
-            {products.map((product) => {
-				return (
-					<div key={product.id}>
-						<ItemList products={products} />
-					</div>
-				);
-			})}
+            <ItemList products={products} />
         </div>
     );
 }

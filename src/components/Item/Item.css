@@ -1,10 +1,12 @@
 .item-container {
     border: 2px solid #000;
-    width: 240px;
-    height: 400px;
+    max-width: 250px;
+    max-height: 450px;
     text-align: center;
     font-family: Arial;
     font-size: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .item-container p{
@@ -12,5 +14,6 @@
 }
 
 .item-container img {
-    width: 240px;
+    width: 160px;
+    height: 275px;
 }
