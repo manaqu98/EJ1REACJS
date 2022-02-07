@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
-import ItemList from "../ItemList/ItemList.js"
-import "./ItemListContainer.css"
+import ItemList from "../ItemList/ItemList.js";
+import "./ItemListContainer.css";
 
 const ItemListContainer = ({ greeting }) => {
 
