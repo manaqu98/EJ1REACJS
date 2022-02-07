@@ -1,13 +1,14 @@
+import React from "react";
 import "./Item.css"
 
-const Item = ({id, brand, model, img, price}) => {
+const Item = ({product}) => {
     return(
         <div className="item-container">
-            <p className="id">{id}</p>
-            <p className="brand">{brand}</p>
-            <p className="model">{model}</p>
-            <img src={img} alt=""></img>
-            <p className="price">{"Precio: $" + price}</p>
+            <p className="id">{product.id}</p>
+            <p className="brand">{product.brand}</p>
+            <p className="model">{product.model}</p>
+            <img src={product.img} alt=""></img>
+            <p className="price">{"Precio: $" + product.price}</p>
         </div>
     );
 }
