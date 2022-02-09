@@ -8,14 +8,14 @@ const ItemDetailContainer = () => {
     const [detail, setDetail] = useState([]);
 
     console.log(detail);
-
+    
     useEffect(() => {
-        axios('https://www.mockachino.com/de419ede-2031-47/productdata').then((res) => setDetail(res.detail));
+        axios('https://www.mockachino.com/de419ede-2031-47/productdata').then((res) => setDetail(res.data));
     }, []);
 
     return(
         <div className="itemDetailContainer-container">
-            <ItemDetail />
+            <ItemDetail  details={detail}/>
         </div>
     )
 }
