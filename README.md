@@ -34,7 +34,7 @@ para correr como servidor local el proyecto
 
 ## App en funcionamiento
 
-https://imgur.com/a/5PTlSaJ
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/5PTlSaJ" data-context="false" ><a href="//imgur.com/a/5PTlSaJ">The Musician&#39;s Route</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 ### Autor
 
