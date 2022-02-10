@@ -6,6 +6,8 @@ const ItemListContainer = () => {
 
     const [products, setProducts] = useState([]);
 
+    console.log(products);
+
     useEffect(() => {
         fetch('https://www.mockachino.com/de419ede-2031-47/products')
             .then((response) => response.json())

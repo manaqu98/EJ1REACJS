@@ -10,7 +10,6 @@ import Amplifiers from "./Views/Amplifiers.js";
 import MultiEffects from "./Views/Multi-Effects.js";
 import Error from "./Views/Error.js";
 
-
 function App() {
   return (
     <div className="app">
@@ -18,14 +17,16 @@ function App() {
         <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/offers" element={<Offers />} />
             <Route path="/instruments" element={<Instruments />} />
             <Route path="/amplifiers" element={<Amplifiers />} />
             <Route path="/stompboxes-Multieffects" element={<MultiEffects />} />
+            <Route path="/instruments/:id" element={<ItemDetailContainer />} />
             <Route path="*" element={<Error />} />
           </Routes>
       </Router>
-      {<ItemDetailContainer />}
+      {/*<ItemDetailContainer />*/}
     </div>
 );
 }

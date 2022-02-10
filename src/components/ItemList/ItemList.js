@@ -7,7 +7,9 @@ const ItemList = ({products}) => {
     return(
         <div className="ItemList-container">
             {products.map((product) => (
-                <NavLink key={product.id} activeclassname="active" to={`/product/${product.brand}/${product.model}`} className="Link">{<Item product={product} />}</NavLink>
+                <NavLink key={product.id} activeclassname="active" to={`/instruments/${product.id}`} className="Link">
+                    <Item product={product}/>
+                </NavLink>
             ))}
         </div>
     );
