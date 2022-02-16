@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./ItemCount.css"
 
 const ItemCount = ({stock, initial}) => {
     const [counter, setCounter] = useState(initial);
@@ -13,7 +14,7 @@ const ItemCount = ({stock, initial}) => {
 
     return(
         <div className="itemcount-container">
-            <h1>Quantity</h1>
+            <h4>Quantity</h4>
             <p>{counter}</p>
             <button onClick={() => stock === counter
                 ? alert("No more stock")
