@@ -6,15 +6,15 @@ import {CartContext} from "../../Context/CartContext.js";
 
 const ItemDetail = ({details}) => {
     const [purchased, setPurchased] = useState(false);
+    const [cart, setCart] = useContext(CartContext);
 
     const onAdd = (value) => {
         setPurchased(true);
-        console.log(value);
+        const item = {quantity: value, item: details.brand+` `+details.model, price: details.price*value}
+        setCart(currentState => [...currentState, item]);
+        console.log(item);
+        console.log(cart);
     };
-
-    const data = useContext(CartContext);
-    console.log(data);
-    console.log(CartContext);
 
     return(
         <div className="itemDetail-container">
