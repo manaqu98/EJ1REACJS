@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./ItemDetail.css";
 import ItemCount from "../ItemCount/ItemCount.js";
 import { NavLink } from "react-router-dom";
+import {CartContext} from "../../Context/CartContext.js";
 
 const ItemDetail = ({details}) => {
     const [purchased, setPurchased] = useState(false);
@@ -10,6 +11,10 @@ const ItemDetail = ({details}) => {
         setPurchased(true);
         console.log(value);
     };
+
+    const data = useContext(CartContext);
+    console.log(data);
+    console.log(CartContext);
 
     return(
         <div className="itemDetail-container">
