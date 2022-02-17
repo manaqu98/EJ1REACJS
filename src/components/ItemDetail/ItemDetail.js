@@ -10,8 +10,7 @@ const ItemDetail = ({details}) => {
 
     const onAdd = (value) => {
         setPurchased(true); 
-        console.log(value);
-        addOn();
+        addOn(details, value);
     };
 
     return(
