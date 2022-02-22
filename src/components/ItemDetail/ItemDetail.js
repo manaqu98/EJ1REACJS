@@ -19,7 +19,7 @@ const ItemDetail = ({details}) => {
             <p className="description">{details.description}</p>
             <img src={details.img} alt=""></img>
             <p className="price">{"Precio: $" + details.price}</p>
-            {purchased?(<NavLink to="/cart"><button>Checkout</button></NavLink>):(<ItemCount stock={10} initial={1} onAdd={onAdd} addOn={addOn}/>)}
+            {purchased?(<NavLink to="/cart"><button>Checkout</button></NavLink>):(<ItemCount stock={10} initial={1} onAdd={onAdd}/>)}
         </div>
     )
 }
